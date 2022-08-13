@@ -1,0 +1,25 @@
+{
+  "name": "node-red-contrib-easy-disable",
+  "version": "0.0.1",
+  "description": "Node for easy disabling (and enabling) of flow.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anderskvist/node-red-contrib-easy-disable.git"
+  },
+  "author": "Anders Kvist",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/anderskvist/node-red-contrib-easy-disable/issues"
+  },
+  "homepage": "https://github.com/anderskvist/node-red-contrib-easy-disable#readme",
+  "node-red" : {
+    "nodes": {
+      "check": "check.js",
+      "control": "control.js"
+    }
+  }
+}

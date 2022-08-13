@@ -1,0 +1,27 @@
+<script type="text/javascript">
+    RED.nodes.registerType('control',{
+        category: 'function',
+        color: '#ff0000',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "font-awesome/fa-cog",
+        label: function() {
+            return this.name||"control";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="control">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="control">
+    <p>A simple node that can control the check node.</p>
+</script>
+
